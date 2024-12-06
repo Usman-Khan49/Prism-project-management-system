@@ -12,11 +12,11 @@ function App() {
       <Routes>
         <Route 
           path="/" 
-          element={isAuthenticated ? <Navigate to="/dashboard" /> : <Signin />} 
+          element={isAuthenticated ? <Navigate to="/Dashboard" /> : <Signin />} 
         />
         <Route 
           path="/signup" 
-          element={isAuthenticated ? <Navigate to="/dashboard" /> : <Signup />} 
+          element={isAuthenticated ? <Navigate to="/Dashboard" /> : <Signup />} 
         />
         <Route 
           path="/dashboard" 

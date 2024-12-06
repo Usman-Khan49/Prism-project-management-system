@@ -79,10 +79,12 @@ function Signup({ theme }) {
         email: formData.email,
         password: formData.password
       });
+      
       localStorage.setItem('token', data.token);
+      
       navigate('/dashboard');
     } catch (error) {
-      setError(error.response?.data?.message || 'An error occurred during sign up');
+      setError('An error occurred during sign up');
     }
   };
 
